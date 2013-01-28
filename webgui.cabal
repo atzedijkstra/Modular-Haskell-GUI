@@ -9,12 +9,23 @@ Synopsis:       A modular web-based GUI framework.
 Category:       GUI
 
 Library
+    default-language: Haskell2010
     Build-Depends:
         timers-updatable >= 0.2.0.2,
-        websockets == 0.5.2.1,
-        json == 0.5,
-        websockets-snap == 0.5.0.1,
-        snap-core == 0.7.0.1
+        websockets ,
+        json ,
+        websockets-snap,
+        snap-core,
+        snap-server,
+        network,
+        containers,
+        base,
+        transformers,
+        stm,
+        stm-chans,
+        text,
+        bytestring
+    hs-source-dirs:  src/lib/webgui
     Exposed-Modules:
         Graphics.UI.WebGUI.JSON
         Graphics.UI.WebGUI.Events
@@ -43,3 +54,9 @@ Library
         Graphics.UI.WebGUI.GUI
         Graphics.UI.WebGUI.Buffer
     Hs-Source-Dirs: src
+
+Executable snapexample
+    default-language: Haskell2010
+    build-depends:   webgui, base
+    hs-source-dirs:  src
+    main-is:         SnapExample.hs

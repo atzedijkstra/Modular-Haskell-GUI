@@ -4,7 +4,7 @@
 -- is terminated after 30 minutes.
 -- This server communicates with the client using JSON over WebSockets.
 
-module Snap (
+module Main (
     main
   ) where
 
@@ -18,7 +18,7 @@ main = startGUI logic
 -- Starts the GUI server, given a function that will execute the application logic.
 startGUI :: (Screen -> IO ()) -> IO ()
 startGUI r = do s <- server r
-                start s 9000 "../data/Client"
+                start s 9000 "data/Client"
 
 -- | Constructs a GUI server, given the function that will execute the application logic.
 server :: (Screen -> IO ()) -> IO (Server String InputToken OutputToken)

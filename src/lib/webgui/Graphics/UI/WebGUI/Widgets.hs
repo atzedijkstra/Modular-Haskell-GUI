@@ -1,4 +1,4 @@
-{-# LANGUAGE TypeSynonymInstances, MultiParamTypeClasses, FlexibleContexts, RankNTypes #-}
+{-# LANGUAGE TypeSynonymInstances, FlexibleInstances, MultiParamTypeClasses, FlexibleContexts, RankNTypes #-}
 
 -- | A wrapper module for widget-related datatypes and function.
 -- The contents of this module can safely be exposed to the application layer.
