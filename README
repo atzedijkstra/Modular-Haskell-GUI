@@ -1,8 +1,6 @@
 Info
 ====
-This package contains a library for server side GUI construction which runs in a browser, using Javascript.
-It has been built by Bert Massop and Gerben van Veenendaal, see the original git repo from which this a fork intented to build correctly and run.
-For now, this repo just prevents bitrot of the original repo.
+This package contains a library for server side GUI construction which runs in a browser, using Javascript. It has been built by Bert Massop and Gerben van Veenendaal, see the original git repo from which this a fork intented to build correctly and run. For now, this repo just prevents bitrot of the original repo.
 
 Installation and running
 ========================
@@ -12,3 +10,7 @@ For example:
 > dist/build/snapexample/snapexample
 
 and open a browser on http://0.0.0.0:9000/
+
+Status
+======
+[20130128] I got it to run on in Chrome and Firefox, not Safari. However, no windows/graphics were displayed, only text.
